@@ -1,0 +1,37 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Tracker App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Purchase Tracker</h1>
+  <section id="add-purchase">
+    <h3>Add a Purchase</h3>
+    <form id="purchase-form">
+      <label for="name">Item Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required>
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="Groceries">Groceries</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Entertainment">Entertainment</option>
+        </select>
+      <br>
+      <button type="submit">Add Purchase</button>
+    </form>
+  </section>
+  <section id="purchase-list">
+    <h3>Purchases</h3>
+    <ul id="purchases">
+      </ul>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
